@@ -1,0 +1,403 @@
+@font-face {
+     font-family: Tahoma;
+     src: url(assets/font/twitter.ttf);
+}
+
+:root {
+     --main-color: #1d9bf0;
+     --gry: #9999997f
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+     font-family: Tahoma, Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+
+   body, h1, h2, h3, h4, h5, h6, p, ul, li {
+        padding: 0;
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+   }
+
+   body {
+     background-color: black;
+   }
+
+   ol, ul {
+	list-style: none;
+}
+
+a {
+     text-decoration: none;
+}
+
+/* img {
+     max-width: 100px;
+} */
+
+.btn {
+     background-color: var(--main-color);
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     border: none;
+     border-radius: 35px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.container {
+     width: 65%;
+     background-color: black;
+     margin: auto;
+     display: flex;
+}
+
+aside {
+     flex: 0.3;
+}
+
+main {
+     flex: 0.7;
+}
+
+.trend {
+     flex: 0.4;
+}
+
+
+/* ---------------------------aside------------------------------------- */
+
+aside {
+     height: 100vh;
+     background-color: black;
+     padding: 20px;
+     position: sticky;
+     top: 0;
+}
+
+aside .logo img {
+     width: 30px;
+     margin-left: 20px;
+}
+
+.side-menu {
+     margin-top: 15px;
+     font-size: 20px;
+     color: white;
+}
+
+.side-menu div {
+     margin: 10px 0;
+     padding: 10px 18px;
+     width: fit-content;
+     cursor: pointer;
+     border-radius: 25px;
+}
+
+.side-menu div:hover {
+     background-color: #e7e9ea1a;
+}
+
+.side-menu div span {
+     margin-left: 12px;
+}
+
+.side-menu button {
+     padding: 16px 0;
+     width: 200px;
+     margin-top: 20px;
+}
+
+.account-pic {
+     color: white;
+     display: flex;
+     align-items: center;
+     position: absolute;
+     bottom: 15px;
+}
+
+.account-pic img {
+     border-radius: 50%;
+     margin-right: 15px;
+     width: 50px;
+}
+
+.account-pic div small {
+     color: #999999;
+}
+
+
+/* ---------------------------main------------------------------------- */
+
+main {
+     background-color: black;
+     color: white;
+     padding: 0 20px;
+     border-left:  solid 1px var(--gry);
+     border-right:  solid 1px var(--gry);
+}
+
+.home-bar {
+     padding: 20px 0;
+     position: sticky;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.write-tweet div img {
+     width: 50px;
+     border-radius: 50%;
+}
+
+.input-div {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+}
+
+.input-div input[type='text'] {
+     background: transparent;
+     border: none;
+     font-size: 20px;
+     width: 100%;
+}
+
+.icons {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px 0;
+}
+
+.icons i {
+     margin: 0 5px;
+}
+
+.icons button {
+     padding: 10px 25px;
+     font-size: 14px;
+}
+
+.show-tweets {
+     text-align: center;
+     color: var(--main-color);
+     padding: 20px;
+     font-size: 15px;
+     border-top: solid 1px var(--gry);
+     border-bottom: solid 1px var(--gry);
+}
+
+/* ---------------------------Post------------------------------------- */
+
+.post {
+     display: flex;
+     justify-content: space-between;
+     padding: 15px;
+     border-bottom: solid 1px var(--gry);
+
+}
+
+.post-profile-img {
+     width: 50px;
+     border-radius: 50%;
+     height: 50%;
+}
+
+.post-details {
+     padding: 15px;
+}
+
+.post-details span {
+     color: var(--gry);
+}
+
+.post-details #username{
+     color: white;
+     font-weight: bold;
+}
+
+.post-details p {
+     text-align: right;
+     padding: 15px 0;
+     font-size: 15px;
+     /* color: #cbcbcb; */
+}
+
+.post-details img {
+     width: 100%;
+     border-radius: 15px;
+}
+
+.post-icons {
+     padding: 15px 0;
+     display: flex;
+     justify-content: space-between;
+}
+
+.post-icons i {
+     font-size: 14px;
+}
+
+
+/* ---------------------------Trend------------------------------------- */
+
+
+.trend {
+     margin: 0 25px;
+     /* background-color: wheat; */
+}
+
+.trend img {
+     max-width: 50px;
+}
+
+.search {
+     padding: 15px 0;
+     position: sticky;
+     top: 0;
+     background-color: black;
+     z-index: 1;
+}
+
+.search-input {
+     background-color: #202327;
+     padding: 10px 25px;
+     border-radius: 25px;
+}
+
+.search-input i {
+     color: var(--gry);
+}
+
+
+.search-input input {
+     background-color: transparent;
+     border: none;
+     font-size: 17px;
+     padding-left: 15px;
+}
+
+.stikyTrend {
+     position: sticky;
+     top: -60px;
+}
+
+.whatsHaping {
+     background-color: #202327;
+     padding: 20px;
+     color: white;
+     border-radius: 15px;
+}
+
+.hashtag {
+     margin-top: 35px;
+}
+
+.hashtag span {
+     font-size: 12px;
+     color: var(--gry);
+}
+
+.hashtag i {
+     font-size: 12px;
+     float: right;
+     color: var(--gry);
+}
+
+.hashtag h4 {
+     margin-top: 5px;
+     text-align: right;
+}
+
+.whatsHaping small {
+     color: var(--main-color);
+     margin-top: 10px;
+}
+
+.whoToFollow {
+     background-color: #202327;
+     margin-top: 15px;
+     padding: 20px;
+     color: white;
+     border-radius: 15px;
+     position: relative;
+}
+
+.whoToFollow img {
+     border-radius: 50%;
+}
+
+.peopleToFollow {
+     display: flex;
+     gap: 10px;
+     margin-top: 20px;
+     align-items: center;
+}
+
+.peopleToFollow span {
+     position: absolute;
+     right: 10px;
+     background-color: white;
+     color: black;
+     padding: 5px 12px;
+     font-size: 14px;
+     border-radius: 15px;
+}
+
+.peopleToFollow div small {
+     color: var(--gry);
+}
+
+.whoToFollow #showMoreBTN {
+     color: var(--main-color);
+     margin-top: 15px;
+}
+
+@media only screen and (max-width: 1600px) {
+     .side-menu span {
+          display: none;
+     }
+
+     .side-menu button {
+          display: none;
+     }
+
+     .account-pic div {
+          display: none;
+     }
+
+     aside {
+          flex: 0.1;
+     }
+
+     aside {
+          padding-right: 5px;
+     }
+}
+
+@media only screen and (max-width: 1250px) {
+     .trend {
+          display: none;
+     }
+
+     main {
+          min-width: 600px
+     }
+}
+
+@media only screen and (max-width: 600px) {
+     aside {
+          display: none
+     }
+
+     main {
+          min-width: 100%
+     }
+
+     .container {
+          width: 100%;
+     }
+}

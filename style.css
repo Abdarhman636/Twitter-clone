@@ -1,0 +1,140 @@
+@font-face {
+     font-family: Tahoma;
+     src: url(assets/font/twitter.ttf);
+}
+
+:root {
+     --main-color: #1d9bf0
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+     font-family: Tahoma, Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+
+   body, h1, h2, h3, h4, h5, h6, p, ul, li {
+        padding: 0;
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+   }
+
+   ol, ul {
+	list-style: none;
+}
+
+a {
+     text-decoration: none;
+     color: var(--main-color);
+}
+
+.btn {
+     border: none;
+     border-radius: 25px;
+     padding: 11px 30px;
+     margin: 5px 0;
+     font-weight: bold;
+     width: 300px;
+     font-size: 17px;
+}
+
+/* --------------------------------------------------------------- */
+
+body {
+     background-color: #000;
+}
+
+.container {
+     display: flex;
+     min-height: calc(100vh - 45px);
+}
+
+.home-text {
+     background-color: black;
+     flex: 45%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     color: white;
+     align-items: flex-end;
+     padding-right: 35px;
+}
+
+.home-text img {
+     width: 35px;
+     margin-bottom: 45px;
+}
+
+.home-img {
+     background-image: url(assets/imgs/Homepage.png);
+     flex: 55%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.home-img img {
+     width: 32%;
+}
+
+h1 {
+     font-size: 60px;
+     margin-bottom: 60px;
+     text-align: right;
+}
+
+h2 {
+     text-align: right;
+     margin-bottom: 20px;
+     font-size: 35px;
+}
+
+.mid-section {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+}
+
+.mid-section span {
+     margin: auto;
+}
+
+.mid-section pre {
+     font-size: 10px;
+     text-align: right;
+     color: #71767b;
+}
+
+.mid-section pre span {
+     color: var(--main-color);
+}
+
+#createAccountBTN {
+     background-color: var(--main-color);
+     color: white;
+}
+
+.last-section h4 {
+     margin-top: 50px;
+     text-align: right;
+     font-size: 18px;
+}
+
+#sign-upBTN {
+     background-color: transparent;
+     border: 1px solid var(--main-color);
+     color: var(--main-color);
+     margin-top: 15px;
+}
+
+/* ----------------Footer ------------------------- */
+
+footer {
+     display: flex;
+     color: rgb(113, 118, 123);
+     justify-content: center;
+     gap: 15px;
+     align-items: center;
+     height: 45px;
+}
